@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">RJ Dev Studio and Jaap Counter</title>
+  <desc id="desc">A warm cream card with a saffron mala illustration and Jaap Counter branding.</desc>
+  <rect width="1200" height="630" fill="#fff9ee"/>
+  <circle cx="1030" cy="48" r="330" fill="#ffe4bd" opacity=".65"/>
+  <circle cx="1030" cy="48" r="230" fill="none" stroke="#d96b0b" stroke-width="18" stroke-dasharray="10 27" stroke-linecap="round"/>
+  <circle cx="1030" cy="48" r="150" fill="#fffdf8" stroke="#e7cfad" stroke-width="4"/>
+  <g transform="translate(85 80)">
+    <circle cx="32" cy="32" r="29" fill="#f8ecd8" stroke="#d96b0b" stroke-width="3"/>
+    <path d="M17 39c7 9 23 9 30 0-8 3-22 3-30 0Z" fill="#674b3a"/>
+    <path d="M32 10c6 7 9 13 9 19a9 9 0 0 1-18 0c0-6 3-12 9-19Z" fill="#d96b0b"/>
+    <path d="M32 18c3 5 5 8 5 12a5 5 0 0 1-10 0c0-4 2-7 5-12Z" fill="#fff9ee"/>
+    <text x="82" y="43" fill="#2d190f" font-family="system-ui, sans-serif" font-size="30" font-weight="750">RJ Dev Studio</text>
+  </g>
+  <text x="85" y="270" fill="#994006" font-family="system-ui, sans-serif" font-size="22" font-weight="800" letter-spacing="4">INDEPENDENT PRODUCT STUDIO</text>
+  <text x="85" y="354" fill="#2d190f" font-family="system-ui, sans-serif" font-size="66" font-weight="800">Jaap Counter</text>
+  <text x="85" y="418" fill="#674b3a" font-family="system-ui, sans-serif" font-size="34">A calm digital mala for Android</text>
+  <g transform="translate(85 486)" font-family="system-ui, sans-serif" font-size="24" font-weight="650" fill="#674b3a">
+    <circle cx="8" cy="-8" r="7" fill="#d96b0b"/><text x="30" y="0">No ads</text>
+    <circle cx="178" cy="-8" r="7" fill="#d96b0b"/><text x="200" y="0">Works offline</text>
+    <circle cx="430" cy="-8" r="7" fill="#d96b0b"/><text x="452" y="0">English + Hindi</text>
+  </g>
+</svg>
