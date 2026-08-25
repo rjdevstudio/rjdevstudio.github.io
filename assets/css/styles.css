@@ -51,7 +51,7 @@ body {
   line-height: 1.65;
 }
 
-a { color: var(--accent-strong); text-underline-offset: 0.18em; }
+a { color: var(--accent-strong); text-underline-offset: 0.18em; transition: color 0.15s ease, text-decoration-thickness 0.15s ease; }
 a:hover { text-decoration-thickness: 0.14em; }
 a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 10px; }
 
@@ -118,9 +118,11 @@ img, svg { max-width: 100%; height: auto; }
   border-radius: 999px;
   font-weight: 700;
   text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease, opacity 0.18s ease;
 }
 
 .nav-links a { color: var(--text); }
+.nav-links a:hover { background: var(--surface-strong); }
 .nav-links a[aria-current="page"] { background: var(--surface-strong); }
 
 .button {
@@ -129,11 +131,13 @@ img, svg { max-width: 100%; height: auto; }
   color: #21140a;
   box-shadow: 0 10px 22px rgba(217, 120, 18, 0.2);
 }
+.button:hover { transform: translateY(-2px); box-shadow: 0 14px 28px rgba(217, 120, 18, 0.28); }
 .button.secondary {
   background: transparent;
   color: var(--accent-strong);
   box-shadow: none;
 }
+.button.secondary:hover { transform: translateY(-2px); background: var(--surface-strong); }
 .button.small { min-height: 44px; padding-inline: 0.9rem; }
 
 .hero, .section { padding-block: clamp(3rem, 8vw, 7rem); }
@@ -171,7 +175,9 @@ p { margin: 0 0 1rem; color: var(--muted); }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+.card:hover { transform: translateY(-4px); box-shadow: 0 26px 55px rgba(71, 41, 18, 0.16); }
 .card { padding: 1.35rem; }
 .panel { padding: clamp(1.25rem, 3vw, 2rem); }
 .legal-card { padding: clamp(1.25rem, 3vw, 2.5rem); margin-block: 1rem; }
