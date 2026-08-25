@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manage or Delete Jaap Counter Data | RJ Dev Studio</title>
+  <meta name="description" content="Steps to manage local Jaap Counter data, delete hidden Google Drive app data, revoke Google access, and ask about Firebase diagnostics.">
+  <link rel="canonical" href="https://rjdevstudio.github.io/jaap-counter/data-management/">
+  <meta property="og:title" content="Manage or Delete Jaap Counter Data">
+  <meta property="og:description" content="Local data, hidden Drive snapshot deletion, access revocation, and diagnostic-data guidance.">
+  <meta property="og:url" content="https://rjdevstudio.github.io/jaap-counter/data-management/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://rjdevstudio.github.io/assets/img/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#fff9ee">
+  <link rel="icon" href="../../assets/img/jaap-counter-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../assets/img/icon-192.png">
+  <link rel="manifest" href="../../site.webmanifest">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="../../"><img src="../../assets/img/logo.svg" alt="">RJ Dev Studio</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle><span class="nav-toggle-lines" aria-hidden="true"></span><span class="sr-only">Toggle navigation</span></button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation" data-site-nav>
+        <a href="../../">Home</a><a href="../">Jaap Counter</a><a href="../../about/">About</a><a href="../privacy-policy/">Privacy</a><a href="../support/">Support</a><a class="button" href="https://play.google.com/store/apps/details?id=com.jaapcounter.app" rel="noopener">Get the app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Jaap Counter data management</p>
+        <h1>Manage or delete your data.</h1>
+        <p class="lede">Local app data, hidden Google Drive snapshots, and Google access are controlled separately. Use the steps below for the data you want to manage.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container legal-shell">
+        <nav aria-label="Data management sections">
+          <ul class="legal-toc">
+            <li><a href="#local">Local data</a></li>
+            <li><a href="#drive">Drive snapshots</a></li>
+            <li><a href="#revoke">Revoke access</a></li>
+            <li><a href="#firebase">Firebase questions</a></li>
+          </ul>
+        </nav>
+        <div class="legal-content">
+          <section class="legal-section" id="local">
+            <h2>Manage local app data</h2>
+            <ol>
+              <li>Export a local backup first if you want to keep a copy.</li>
+              <li>Use Jaap Counter's reset options for the specific data you want to reset, where available.</li>
+              <li>Use Android Settings to clear Jaap Counter application storage if you want to remove its local storage on that device.</li>
+              <li>Uninstall Jaap Counter to remove app data that Android manages for the app on that device.</li>
+            </ol>
+            <p>Clearing local storage or uninstalling the app does not necessarily delete hidden Google Drive snapshots.</p>
+          </section>
+
+          <section class="legal-section" id="drive">
+            <h2>Delete hidden Google Drive snapshots</h2>
+            <p>Drive snapshots use Google's hidden <code>appDataFolder</code>, so they do not appear as ordinary files in My Drive. Disconnecting the app is not the same as deleting this data.</p>
+            <ol>
+              <li>Open <a href="https://drive.google.com/drive/settings" rel="noopener">Google Drive settings on the web</a> while signed into the connected account.</li>
+              <li>Open <strong>Manage apps</strong>.</li>
+              <li>Find Jaap Counter.</li>
+              <li>Open its options and choose the option to delete hidden app data, if Google Drive shows it.</li>
+              <li>Repeat for another Google account if you previously connected Jaap Counter there.</li>
+            </ol>
+            <p>Google may change labels or menu locations. Consult Google Drive Help if the option has moved.</p>
+          </section>
+
+          <section class="legal-section" id="revoke">
+            <h2>Disconnect or revoke Google access</h2>
+            <p>Disconnecting in Jaap Counter stops the app's current connection. You can also revoke access from your Google Account:</p>
+            <ol>
+              <li>Open your <a href="https://myaccount.google.com/connections" rel="noopener">Google Account third-party connections</a>.</li>
+              <li>Find Jaap Counter.</li>
+              <li>Review and remove its access.</li>
+            </ol>
+            <p>Revoking access stops future authorization but does not necessarily delete hidden Drive data. Follow the Drive deletion steps separately if you want that data removed.</p>
+          </section>
+
+          <section class="legal-section" id="firebase">
+            <h2>Firebase diagnostic-data questions</h2>
+            <p>Firebase Analytics and Crashlytics records are generally pseudonymous technical records and may not be directly searchable by an email address. For a privacy question, email <a href="mailto:rjdevstudio@gmail.com">rjdevstudio@gmail.com</a> with enough context to understand the request, but do not send sensitive backup contents.</p>
+            <p>For a full explanation of data handling, read the <a href="../privacy-policy/">Privacy Policy</a>.</p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><strong>RJ Dev Studio</strong><p>Independent product studio and creator of Jaap Counter.</p></div>
+      <nav class="footer-links" aria-label="Footer navigation"><a href="../">Jaap Counter</a><a href="../../about/">About</a><a href="../privacy-policy/">Privacy</a><a href="../terms/">Terms</a><a href="../support/">Support</a><a href="./">Data management</a></nav>
+      <div class="footer-meta"><p>© <span data-current-year>2026</span> RJ Dev Studio</p><p><a href="mailto:rjdevstudio@gmail.com">rjdevstudio@gmail.com</a></p><p>Google Play and Google Drive are trademarks of Google LLC.</p></div>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js" defer></script>
+</body>
+</html>

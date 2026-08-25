@@ -1,80 +1,79 @@
 # RJ Dev Studio website
 
-Official static website for **RJ Dev Studio** and its Android app **Jaap Counter**. The repository is intended for the GitHub Pages organization site at:
+Official static website for **RJ Dev Studio** and its first public Android app, **Jaap Counter**:
 
 https://rjdevstudio.github.io/
 
-The site uses semantic HTML5, modern CSS, and minimal vanilla JavaScript only. There is no build step, backend, CMS, analytics, advertising script, external font, CDN, or remote image dependency.
+The site uses semantic HTML, modern CSS, and minimal vanilla JavaScript. It has no framework, build step, backend, analytics, ads, cookies, external fonts, CDN, or remote image dependency.
 
 ## Local preview
 
-From the repository root, run any simple static HTTP server, for example:
+From the repository root, run a static HTTP server:
 
 ```bash
-python3 -m http.server 8080
+python -m http.server 8080
 ```
 
 Then open `http://localhost:8080/`.
 
-## Site structure
+## Validation
 
-- `index.html` — RJ Dev Studio homepage
-- `about/index.html` — organization information and contact
-- `apps/jaap-counter/index.html` — Jaap Counter product page
-- `apps/jaap-counter/privacy-policy/index.html` — Privacy Policy
-- `apps/jaap-counter/terms/index.html` — Terms of Use
-- `apps/jaap-counter/support/index.html` — support and FAQs
-- `apps/jaap-counter/data-management/index.html` — deletion and data-management instructions
-- `jaap-counter/`, `privacy/`, `terms/`, `support/`, and `data-management/` — compatibility redirect pages for older top-level links
-- `404.html` — GitHub Pages not-found page
-- `assets/css/styles.css` — shared styling
-- `assets/js/main.js` — small shared enhancement script
-- `assets/img/` — local SVG branding assets
-- `robots.txt`, `sitemap.xml`, `site.webmanifest`, `.nojekyll` — publishing metadata
-- `.github/workflows/pages.yml` — GitHub Pages Actions deployment
+The dependency-free validator requires only Node.js:
 
-## Editing content
+```bash
+node scripts/validate-site.js
+```
 
-Update page copy directly in the relevant `index.html` file. Primary app content belongs under `apps/jaap-counter/`. Shared visual styles belong in `assets/css/styles.css`; keep images local under `assets/img/`. Do not add third-party scripts, analytics, external fonts, remote images, or placeholder links.
+It checks local links and assets, canonical URLs, required metadata, duplicate IDs, JSON-LD, the web manifest, and sitemap routes.
 
-Organization and contact details currently appear in page headers, footers, JSON-LD, the Privacy Policy, Terms, Support page, and this README. Search for `RJ Dev Studio`, `rjdevstudio@gmail.com`, and `com.jaapcounter.app` when making future updates.
+## Canonical routes
 
-## Canonical URLs and custom domains
+- `/` — RJ Dev Studio homepage
+- `/about/` — studio information and contact
+- `/jaap-counter/` — Jaap Counter product page
+- `/jaap-counter/privacy-policy/` — Privacy Policy
+- `/jaap-counter/terms/` — Terms of Use
+- `/jaap-counter/support/` — support and FAQs
+- `/jaap-counter/data-management/` — local and Google Drive data-management instructions
+- `/404.html` — GitHub Pages not-found page
 
-The initial canonical base URL is:
+Older top-level and `/apps/jaap-counter/` URLs remain as compatibility redirects. Do not use them as canonical links.
+
+## Content and assets
+
+Shared styles live in `assets/css/styles.css`, and the accessible mobile-navigation enhancement lives in `assets/js/main.js`. Branding, the Jaap Counter icon, local manifest icons, and social-preview artwork live under `assets/img/`.
+
+Keep product claims aligned with the current Jaap Counter implementation and Google Play listing. Do not add placeholder apps, fake screenshots, ratings, user counts, team members, testimonials, awards, hard-coded prices, or privacy claims that ignore optional Drive backup and Firebase diagnostics.
+
+## Canonical URL and custom domains
+
+The current canonical base URL is:
 
 https://rjdevstudio.github.io/
 
-If a custom domain is added later, update canonical URLs and Open Graph URLs in each HTML page, plus `robots.txt`, `sitemap.xml`, JSON-LD, and compatibility redirect pages. Add a `CNAME` file only after the final custom domain has been selected.
+If RJ Dev Studio adopts a custom domain, update canonical and Open Graph URLs in each canonical HTML page, plus JSON-LD, `robots.txt`, `sitemap.xml`, and redirect targets. Add `CNAME` only after the real domain is selected and verified.
 
-## GitHub Pages deployment setup
+## GitHub Pages deployment
 
-The workflow in `.github/workflows/pages.yml` publishes the static repository root with no build step using maintained GitHub Actions:
+`.github/workflows/pages.yml` publishes the repository root from `main` using GitHub's maintained Pages actions and no build step.
 
-- `actions/checkout`
-- `actions/configure-pages`
-- `actions/upload-pages-artifact`
-- `actions/deploy-pages`
+1. In **Settings → Pages**, set **Source** to **GitHub Actions**.
+2. Merge a reviewed pull request into `main`, or run **Deploy GitHub Pages** manually.
+3. Confirm the `github-pages` environment deployment and public routes.
 
-To enable Pages with GitHub Actions:
-
-1. Open the repository on GitHub.
-2. Go to Settings → Pages.
-3. Set Source to GitHub Actions.
-4. Merge changes into `main` or run the workflow manually.
+If the repository is still configured to publish from a legacy branch, switch it to GitHub Actions only after the replacement workflow is available on `main`.
 
 ## Google OAuth production checklist
 
-- Homepage URL: `https://rjdevstudio.github.io/`
-- Privacy Policy URL: `https://rjdevstudio.github.io/apps/jaap-counter/privacy-policy/`
-- Terms URL: `https://rjdevstudio.github.io/apps/jaap-counter/terms/`
+- Homepage: `https://rjdevstudio.github.io/`
+- Privacy Policy: `https://rjdevstudio.github.io/jaap-counter/privacy-policy/`
+- Terms: `https://rjdevstudio.github.io/jaap-counter/terms/`
 - Authorized domain: `rjdevstudio.github.io`
-- Verify app ownership in the relevant Google Console flows.
-- Confirm the Play listing links to the public Privacy Policy and support pages under `apps/jaap-counter/`.
-- Review OAuth scopes and ensure Drive usage is limited to `drive.appdata` plus OpenID and basic account profile/email scopes.
+- Confirm Drive usage remains limited to `drive.appdata` with OpenID and basic account email/profile scopes.
+- Confirm the Play listing links to the canonical Privacy Policy and support pages.
 
-A `github.io` site may not satisfy every Google OAuth verified-domain requirement. A custom domain owned by RJ Dev Studio may still be required for public OAuth verification.
+A `github.io` site may not satisfy every verified-domain or brand requirement. A custom domain owned and verified by RJ Dev Studio may still be required for Google OAuth production review.
 
-## Legal review
+## Legal review required
 
-The Privacy Policy and Terms are drafted for publication readiness, but the site owner should obtain legal review before production publication.
+The Privacy Policy, Terms of Use, support guidance, and data-management instructions are implementation-aligned drafts for publication. **The owner should obtain qualified legal review before treating them as final production legal advice**, and should review them again whenever app behavior, providers, permissions, purchase terms, or retention practices change.
