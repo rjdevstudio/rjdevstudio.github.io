@@ -19,11 +19,13 @@ Then open `http://localhost:8080/`.
 ## Site structure
 
 - `index.html` — RJ Dev Studio homepage
-- `jaap-counter/index.html` — Jaap Counter product page
-- `privacy/index.html` — Privacy Policy
-- `terms/index.html` — Terms of Use
-- `support/index.html` — support and FAQs
-- `data-management/index.html` — deletion and data-management instructions
+- `about/index.html` — organization information and contact
+- `apps/jaap-counter/index.html` — Jaap Counter product page
+- `apps/jaap-counter/privacy-policy/index.html` — Privacy Policy
+- `apps/jaap-counter/terms/index.html` — Terms of Use
+- `apps/jaap-counter/support/index.html` — support and FAQs
+- `apps/jaap-counter/data-management/index.html` — deletion and data-management instructions
+- `jaap-counter/`, `privacy/`, `terms/`, `support/`, and `data-management/` — compatibility redirect pages for older top-level links
 - `404.html` — GitHub Pages not-found page
 - `assets/css/styles.css` — shared styling
 - `assets/js/main.js` — small shared enhancement script
@@ -33,7 +35,7 @@ Then open `http://localhost:8080/`.
 
 ## Editing content
 
-Update page copy directly in the relevant `index.html` file. Shared visual styles belong in `assets/css/styles.css`; keep images local under `assets/img/`. Do not add third-party scripts, analytics, external fonts, remote images, or placeholder links.
+Update page copy directly in the relevant `index.html` file. Primary app content belongs under `apps/jaap-counter/`. Shared visual styles belong in `assets/css/styles.css`; keep images local under `assets/img/`. Do not add third-party scripts, analytics, external fonts, remote images, or placeholder links.
 
 Organization and contact details currently appear in page headers, footers, JSON-LD, the Privacy Policy, Terms, Support page, and this README. Search for `RJ Dev Studio`, `rjdevstudio@gmail.com`, and `com.jaapcounter.app` when making future updates.
 
@@ -43,7 +45,7 @@ The initial canonical base URL is:
 
 https://rjdevstudio.github.io/
 
-If a custom domain is added later, update canonical URLs and Open Graph URLs in each HTML page, plus `robots.txt`, `sitemap.xml`, and JSON-LD. Add a `CNAME` file only after the final custom domain has been selected.
+If a custom domain is added later, update canonical URLs and Open Graph URLs in each HTML page, plus `robots.txt`, `sitemap.xml`, JSON-LD, and compatibility redirect pages. Add a `CNAME` file only after the final custom domain has been selected.
 
 ## GitHub Pages deployment setup
 
@@ -64,11 +66,11 @@ To enable Pages with GitHub Actions:
 ## Google OAuth production checklist
 
 - Homepage URL: `https://rjdevstudio.github.io/`
-- Privacy Policy URL: `https://rjdevstudio.github.io/privacy/`
-- Terms URL: `https://rjdevstudio.github.io/terms/`
+- Privacy Policy URL: `https://rjdevstudio.github.io/apps/jaap-counter/privacy-policy/`
+- Terms URL: `https://rjdevstudio.github.io/apps/jaap-counter/terms/`
 - Authorized domain: `rjdevstudio.github.io`
 - Verify app ownership in the relevant Google Console flows.
-- Confirm the Play listing links to the public Privacy Policy and support pages.
+- Confirm the Play listing links to the public Privacy Policy and support pages under `apps/jaap-counter/`.
 - Review OAuth scopes and ensure Drive usage is limited to `drive.appdata` plus OpenID and basic account profile/email scopes.
 
 A `github.io` site may not satisfy every Google OAuth verified-domain requirement. A custom domain owned by RJ Dev Studio may still be required for public OAuth verification.
