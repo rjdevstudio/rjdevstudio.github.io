@@ -1,0 +1,16 @@
+{
+  "name": "RJ Dev Studio",
+  "short_name": "RJ Dev Studio",
+  "description": "Official website for RJ Dev Studio and Jaap Counter.",
+  "start_url": "./",
+  "display": "minimal-ui",
+  "background_color": "#fbf4e8",
+  "theme_color": "#d97812",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">RJ Dev Studio logo</title>
+  <desc id="desc">A warm circular mark with a diya flame and lotus petals.</desc>
+  <circle cx="48" cy="48" r="44" fill="#f7ead8" stroke="#d98a1b" stroke-width="4"/>
+  <path d="M25 58c10 13 36 13 46 0-11 4-35 4-46 0Z" fill="#8a4b20"/>
+  <path d="M48 16c9 10 13 18 13 27 0 8-6 14-13 14s-13-6-13-14c0-9 4-17 13-27Z" fill="#f2992e"/>
+  <path d="M48 26c5 7 7 12 7 17 0 4-3 8-7 8s-7-4-7-8c0-5 2-10 7-17Z" fill="#fff3c4"/>
+  <path d="M48 64c-8-11-20-13-31-7 10 1 20 8 31 7Zm0 0c8-11 20-13 31-7-10 1-20 8-31 7Z" fill="#d98a1b"/>
+</svg>
