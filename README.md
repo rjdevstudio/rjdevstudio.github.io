@@ -20,12 +20,12 @@ Then open `http://localhost:8080/`.
 
 - `index.html` — RJ Dev Studio homepage
 - `about/index.html` — organization information and contact
-- `apps/jaap-counter/index.html` — Jaap Counter product page
-- `apps/jaap-counter/privacy-policy/index.html` — Privacy Policy
-- `apps/jaap-counter/terms/index.html` — Terms of Use
-- `apps/jaap-counter/support/index.html` — support and FAQs
-- `apps/jaap-counter/data-management/index.html` — deletion and data-management instructions
-- `jaap-counter/`, `privacy/`, `terms/`, `support/`, and `data-management/` — compatibility redirect pages for older top-level links
+- `jaap-counter/index.html` — Jaap Counter product page (RJ Dev Studio's first public app)
+- `jaap-counter/privacy-policy/index.html` — Privacy Policy
+- `jaap-counter/terms/index.html` — Terms of Use
+- `jaap-counter/support/index.html` — support and FAQs
+- `jaap-counter/data-management/index.html` — deletion and data-management instructions
+- `privacy/`, `terms/`, `support/`, and `data-management/` — compatibility redirect pages for older top-level links
 - `404.html` — GitHub Pages not-found page
 - `assets/css/styles.css` — shared styling
 - `assets/js/main.js` — small shared enhancement script
@@ -33,9 +33,11 @@ Then open `http://localhost:8080/`.
 - `robots.txt`, `sitemap.xml`, `site.webmanifest`, `.nojekyll` — publishing metadata
 - `.github/workflows/pages.yml` — GitHub Pages Actions deployment
 
+Each product gets its own top-level route (for example `jaap-counter/`), keeping the site product-first and ready for future products as additional sibling routes without a multi-app grid or placeholder content.
+
 ## Editing content
 
-Update page copy directly in the relevant `index.html` file. Primary app content belongs under `apps/jaap-counter/`. Shared visual styles belong in `assets/css/styles.css`; keep images local under `assets/img/`. Do not add third-party scripts, analytics, external fonts, remote images, or placeholder links.
+Update page copy directly in the relevant `index.html` file. Primary app content belongs under `jaap-counter/`. Shared visual styles belong in `assets/css/styles.css`; keep images local under `assets/img/`. Do not add third-party scripts, analytics, external fonts, remote images, or placeholder links.
 
 Organization and contact details currently appear in page headers, footers, JSON-LD, the Privacy Policy, Terms, Support page, and this README. Search for `RJ Dev Studio`, `rjdevstudio@gmail.com`, and `com.jaapcounter.app` when making future updates.
 
@@ -66,11 +68,11 @@ To enable Pages with GitHub Actions:
 ## Google OAuth production checklist
 
 - Homepage URL: `https://rjdevstudio.github.io/`
-- Privacy Policy URL: `https://rjdevstudio.github.io/apps/jaap-counter/privacy-policy/`
-- Terms URL: `https://rjdevstudio.github.io/apps/jaap-counter/terms/`
+- Privacy Policy URL: `https://rjdevstudio.github.io/jaap-counter/privacy-policy/`
+- Terms URL: `https://rjdevstudio.github.io/jaap-counter/terms/`
 - Authorized domain: `rjdevstudio.github.io`
 - Verify app ownership in the relevant Google Console flows.
-- Confirm the Play listing links to the public Privacy Policy and support pages under `apps/jaap-counter/`.
+- Confirm the Play listing links to the public Privacy Policy and support pages under `jaap-counter/`.
 - Review OAuth scopes and ensure Drive usage is limited to `drive.appdata` plus OpenID and basic account profile/email scopes.
 
 A `github.io` site may not satisfy every Google OAuth verified-domain requirement. A custom domain owned by RJ Dev Studio may still be required for public OAuth verification.
