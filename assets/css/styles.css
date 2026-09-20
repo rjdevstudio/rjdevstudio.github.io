@@ -367,7 +367,7 @@ p {
 
 .app-showcase {
   position: relative;
-  min-height: 37rem;
+  min-height: 32rem;
   display: grid;
   place-items: center;
   isolation: isolate;
@@ -409,7 +409,7 @@ p {
 }
 
 .app-shot {
-  width: min(16rem, 52vw);
+  width: min(13rem, 42vw);
   margin: 0;
   overflow: hidden;
   padding-top: 0.35rem;
@@ -1029,7 +1029,7 @@ code {
   }
 
   .app-showcase {
-    min-height: 33rem;
+    min-height: 25rem;
   }
 
   .app-showcase-label {
@@ -1038,7 +1038,7 @@ code {
   }
 
   .app-shot {
-    width: min(14rem, 58vw);
+    width: min(10.75rem, 46vw);
   }
 
   h1 {
@@ -1047,8 +1047,7 @@ code {
 
   .feature-rows,
   .feature-grid,
-  .access-grid,
-  .screenshot-gallery {
+  .access-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1070,23 +1069,30 @@ code {
   }
 
   .screenshot-gallery {
-    gap: 2.75rem;
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(13rem, 16rem);
+    gap: 1rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding: 0.25rem 0.25rem 1rem;
+    scroll-padding-inline: 0.25rem;
+    scroll-snap-type: inline mandatory;
+    scrollbar-color: var(--line-strong) transparent;
+    scrollbar-width: thin;
   }
 
   .screenshot-card {
-    display: grid;
-    grid-template-columns: minmax(7.5rem, 10rem) 1fr;
-    align-items: center;
-    gap: 1.25rem;
+    scroll-snap-align: start;
   }
 
   .screenshot-frame {
-    width: 100%;
+    width: min(100%, 11rem);
     border-radius: 1.35rem;
   }
 
   .screenshot-copy {
-    padding-top: 0;
+    padding-top: 1rem;
   }
 
   .cta-band {
@@ -1133,16 +1139,16 @@ code {
     width: 100%;
   }
 
-  .screenshot-card {
-    grid-template-columns: 1fr;
+  .screenshot-gallery {
+    grid-auto-columns: min(14.5rem, 82vw);
   }
 
   .screenshot-frame {
-    width: min(13rem, 75vw);
+    width: min(12rem, 100%);
   }
 
   .screenshot-copy {
-    text-align: center;
+    text-align: left;
   }
 }
 
