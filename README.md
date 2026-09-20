@@ -41,7 +41,7 @@ Older top-level and `/apps/jaap-counter/` URLs remain as compatibility redirects
 
 ## Content and assets
 
-Shared styles live in `assets/css/styles.css`, and the accessible mobile-navigation enhancement lives in `assets/js/main.js`. Branding, the Jaap Counter icon, local manifest icons, and social-preview artwork live under `assets/img/`.
+Shared styles live in `assets/css/styles.css`, and the accessible mobile-navigation enhancement lives in `assets/js/main.js`. Branding, the Jaap Counter icon, optimized local app screenshots, manifest icons, and social-preview artwork live under `assets/img/`.
 
 Keep product claims aligned with the current Jaap Counter implementation and Google Play listing. Do not add placeholder apps, fake screenshots, ratings, user counts, team members, testimonials, awards, hard-coded prices, or privacy claims that ignore optional Drive backup and Firebase diagnostics.
 
