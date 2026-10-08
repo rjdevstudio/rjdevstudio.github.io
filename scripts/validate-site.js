@@ -12,6 +12,7 @@ const canonicalPages = new Set([
   'jaap-counter/terms/index.html',
   'jaap-counter/support/index.html',
   'jaap-counter/data-management/index.html',
+  'jaap-counter/account-deletion/index.html',
 ]);
 const errors = [];
 

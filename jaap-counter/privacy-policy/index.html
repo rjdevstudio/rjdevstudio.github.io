@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jaap Counter Privacy Policy | RJ Dev Studio</title>
-  <meta name="description" content="How Jaap Counter handles local practice data, optional Google Drive backup, Firebase diagnostics, Google Play Billing, notifications and wallpapers.">
+  <meta name="description" content="How Jaap Counter handles private practice data, optional Community and account deletion, Google Drive backup, Firebase diagnostics, and Google Play Billing.">
   <link rel="canonical" href="https://rjdevstudio.github.io/jaap-counter/privacy-policy/">
   <meta property="og:title" content="Jaap Counter Privacy Policy">
-  <meta property="og:description" content="Plain-language details about local data, optional Drive backup, diagnostics, billing, and user controls.">
+  <meta property="og:description" content="Plain-language details about private practice, optional Community, Drive backup, diagnostics, billing, and user controls.">
   <meta property="og:url" content="https://rjdevstudio.github.io/jaap-counter/privacy-policy/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://rjdevstudio.github.io/assets/img/social-card.png">
@@ -33,9 +33,9 @@
   <main id="main">
     <header class="page-hero">
       <div class="container narrow">
-        <p class="eyebrow">Effective and last updated September 20, 2026</p>
+        <p class="eyebrow">Effective September 20, 2026; last updated October 8, 2026</p>
         <h1>Privacy Policy</h1>
-        <p class="lede">This policy explains how Jaap Counter handles information. RJ Dev Studio is based in India and does not operate an account system or backend for your practice data.</p>
+        <p class="lede">This policy explains how Jaap Counter handles information. RJ Dev Studio is based in India. Private practice does not require an account; in builds that include it, optional Community uses a separate account and backend for Community data.</p>
       </div>
     </header>
 
@@ -45,6 +45,7 @@
           <ul class="legal-toc">
             <li><a href="#local-data">Local data</a></li>
             <li><a href="#drive">Drive backup</a></li>
+            <li><a href="#community">Optional Community</a></li>
             <li><a href="#firebase">Firebase</a></li>
             <li><a href="#billing">Billing</a></li>
             <li><a href="#device-features">Device features</a></li>
@@ -58,7 +59,7 @@
           <section class="legal-section" id="local-data">
             <h2>Local app data</h2>
             <p>Jaap Counter stores primary practice data locally on your device. This may include mantra profiles, short names, and optional full mantra text; counts, goals, history, streak-related data, lifetime totals, and practice time; meditation settings; preferences and themes; wallpaper metadata and image files; and local backup files you create.</p>
-            <p>RJ Dev Studio does not run an account system or backend that stores this practice data. Core counting and local practice features are designed to work offline.</p>
+            <p>Core counting and local practice features are designed to work offline without a Community account. Private numeric counts, History, profiles, audio, and wallpapers are separate from Community membership and shared practice.</p>
           </section>
 
           <section class="legal-section" id="drive">
@@ -68,6 +69,13 @@
             <p>The newest two complete snapshots are retained. Older snapshots and unreferenced wallpaper data are cleaned up as newer complete snapshots are saved.</p>
             <p>The connected Google email address may be stored locally so the app can show which account is connected. OAuth access tokens are kept in memory only and are not stored as refresh tokens by Jaap Counter.</p>
             <p>Disconnecting Drive stops future app access and automatic backup, but it does not necessarily delete hidden data already stored in Drive. Revoking Google access also does not necessarily delete that hidden data. See <a href="../data-management/">Data Management</a> for separate deletion and revocation steps.</p>
+          </section>
+
+          <section class="legal-section" id="community">
+            <h2>Optional Community and account deletion</h2>
+            <p>Community is optional and its availability depends on your app build. Where included, it uses Google sign-in and an app-specific Firebase identity. Community membership, shared practice, public entries, and associated Community records are processed separately from your private practice.</p>
+            <p>Completed Community deletion removes that Firebase identity and the associated Community data, not your Google account, private numeric counts, History, profiles, audio, wallpaper, Drive authorization, or Google Play purchases. Provider-confirmed identity deletion must happen before server cleanup; a received or pending request is not completed deletion.</p>
+            <p>An old backup you hold does not revive a deleted identity. Other people's downloaded or offline copies cannot be remotely erased immediately. See the <a href="../account-deletion/">English and Hindi account-deletion help</a> for the in-app steps and verified email support without reinstalling.</p>
           </section>
 
           <section class="legal-section" id="firebase">
@@ -89,13 +97,14 @@
 
           <section class="legal-section" id="retention">
             <h2>Data sharing and retention</h2>
-            <p>RJ Dev Studio does not sell personal data. Jaap Counter has no ads. Information is processed by service providers only as needed for optional Drive functionality, Google Play Billing, Firebase Analytics, and Firebase Crashlytics.</p>
+            <p>RJ Dev Studio does not sell personal data. Jaap Counter has no ads. Information is processed by service providers only as needed for optional Community, optional Drive functionality, Google Play Billing, Firebase Analytics, and Firebase Crashlytics.</p>
             <p>Local data remains until you reset the relevant app data, clear Android application storage, or uninstall the app. Drive retains the newest two complete snapshots until they are replaced or you delete the hidden app data. Firebase records follow the retention settings and policies configured for those Google services.</p>
           </section>
 
           <section class="legal-section" id="choices">
             <h2>Your controls and choices</h2>
             <ul>
+              <li>Keep private practice separate from optional Community, and <a href="../account-deletion/">delete a Community account and its data</a> when you choose.</li>
               <li>Use Jaap Counter and local backup without connecting Google Drive.</li>
               <li>Disable automatic Drive backup or disconnect the connected account.</li>
               <li>Restore an existing Drive snapshot without Premium.</li>
@@ -110,7 +119,7 @@
             <h2>Security, children, and international processing</h2>
             <p>RJ Dev Studio uses platform security features and limited permissions, but no storage or transmission method can be guaranteed completely secure. Protect your device, Google account, and exported backup files.</p>
             <p>Jaap Counter is a general-audience devotional and productivity app. It is not directed to children, and RJ Dev Studio does not knowingly collect children's personal information through an RJ Dev Studio account system.</p>
-            <p>Google and other service providers may process Drive, billing, analytics, or diagnostic information outside your country according to their infrastructure and policies.</p>
+            <p>Google and other service providers may process Community, Drive, billing, analytics, or diagnostic information outside your country according to their infrastructure and policies.</p>
           </section>
 
           <section class="legal-section" id="contact">
@@ -126,7 +135,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand"><strong>RJ Dev Studio</strong><p>Independent product studio and creator of Jaap Counter.</p></div>
-      <nav class="footer-links" aria-label="Footer navigation"><a href="../">Jaap Counter</a><a href="../../about/">About</a><a href="./">Privacy</a><a href="../terms/">Terms</a><a href="../support/">Support</a><a href="../data-management/">Data management</a></nav>
+      <nav class="footer-links" aria-label="Footer navigation"><a href="../">Jaap Counter</a><a href="../../about/">About</a><a href="./">Privacy</a><a href="../terms/">Terms</a><a href="../support/">Support</a><a href="../data-management/">Data management</a><a href="../account-deletion/">Account deletion</a></nav>
       <div class="footer-meta"><p>© <span data-current-year>2026</span> RJ Dev Studio</p><p><a href="mailto:rjdevstudio@gmail.com">rjdevstudio@gmail.com</a></p><p>Google Play and Google Drive are trademarks of Google LLC.</p></div>
     </div>
   </footer>

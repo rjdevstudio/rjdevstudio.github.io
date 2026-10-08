@@ -35,6 +35,7 @@ It checks local links and assets, canonical URLs, required metadata, duplicate I
 - `/jaap-counter/terms/` — Terms of Use
 - `/jaap-counter/support/` — support and FAQs
 - `/jaap-counter/data-management/` — local and Google Drive data-management instructions
+- `/jaap-counter/account-deletion/` — English and Hindi Community account-deletion help
 - `/404.html` — GitHub Pages not-found page
 
 Older top-level and `/apps/jaap-counter/` URLs remain as compatibility redirects. Do not use them as canonical links.
@@ -44,6 +45,10 @@ Older top-level and `/apps/jaap-counter/` URLs remain as compatibility redirects
 Shared styles live in `assets/css/styles.css`, and the accessible mobile-navigation enhancement lives in `assets/js/main.js`. Branding, the Jaap Counter icon, optimized local app screenshots, manifest icons, and social-preview artwork live under `assets/img/`.
 
 Keep product claims aligned with the current Jaap Counter implementation and Google Play listing. Do not add placeholder apps, fake screenshots, ratings, user counts, team members, testimonials, awards, hard-coded prices, or privacy claims that ignore optional Drive backup and Firebase diagnostics.
+
+Optional Community is separate from private practice. Its account-deletion help is a static information page, not a deletion API or sign-in form. Keep the canonical URL `https://rjdevstudio.github.io/jaap-counter/account-deletion/` stable for app links and legacy redirects. Deletion/status APIs stay in the Community backend; changing website source does not publish this route until a Pages deployment succeeds.
+
+Publishing this help does not announce or approve a public Community rollout. In-app instructions apply only to builds that include Community; older or uninstalled builds can use the verified email support path.
 
 ## Canonical URL and custom domains
 
